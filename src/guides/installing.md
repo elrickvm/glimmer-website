@@ -53,6 +53,12 @@ To install Ember CLI Canary, run the following command to install it from the `m
 ```bash
 yarn global add ember-cli/ember-cli
 ```
+Note, if you are using a node version manager like NVM. Yarn may not find and install the package into the global folder for
+your currently selected node version. If this happens run this command.
+
+```bash
+yarn global add ember-cli/ember-cli --global-folder=‘yarn global bin’
+```
 
 Alternatively, you can do:
 
